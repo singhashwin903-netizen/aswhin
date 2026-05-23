@@ -1,0 +1,262 @@
+export default function SSOverseasWebsite() {
+  return (
+    <div className="min-h-screen bg-black text-white font-sans">
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 w-full bg-black/90 backdrop-blur-md border-b border-yellow-500 z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold text-xl">
+              SS
+            </div>
+            <div>
+              <h1 className="text-2xl font-bold text-yellow-400">SS Overseas</h1>
+              <p className="text-sm text-gray-300">Study Abroad Consultants</p>
+            </div>
+          </div>
+
+          <div className="hidden md:flex gap-8 text-lg">
+            <a href="#home" className="hover:text-yellow-400">Home</a>
+            <a href="#about" className="hover:text-yellow-400">About</a>
+            <a href="#services" className="hover:text-yellow-400">Services</a>
+            <a href="#countries" className="hover:text-yellow-400">Countries</a>
+            <a href="#contact" className="hover:text-yellow-400">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section
+        id="home"
+        className="pt-40 pb-24 px-6 bg-gradient-to-br from-black via-blue-950 to-black"
+      >
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
+              Your Dream To <span className="text-yellow-400">Study Abroad</span> Starts Here
+            </h1>
+
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              SS Overseas provides complete overseas education support including
+              university admissions, SOP assistance, visa guidance, interview
+              preparation, and end-to-end student counselling.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-8 py-4 rounded-2xl shadow-xl transition">
+                Free Consultation
+              </button>
+
+              <a
+                href="https://wa.me/919052398859"
+                className="border border-yellow-500 hover:bg-yellow-500 hover:text-black px-8 py-4 rounded-2xl transition"
+              >
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div className="bg-white/10 backdrop-blur-lg border border-yellow-500 rounded-3xl p-8 shadow-2xl">
+              <h2 className="text-3xl font-bold text-yellow-400 mb-6">
+                Get Free Consultation
+              </h2>
+
+              <div className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full p-4 rounded-xl bg-black/40 border border-gray-700"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Phone Number"
+                  className="w-full p-4 rounded-xl bg-black/40 border border-gray-700"
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="w-full p-4 rounded-xl bg-black/40 border border-gray-700"
+                />
+
+                <select className="w-full p-4 rounded-xl bg-black/40 border border-gray-700">
+                  <option>Select Country</option>
+                  <option>USA</option>
+                  <option>UK</option>
+                  <option>Australia</option>
+                  <option>Europe</option>
+                </select>
+
+                <button className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-bold py-4 rounded-xl transition">
+                  Submit Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-24 px-6 bg-black">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+          <div>
+            <h2 className="text-5xl font-bold mb-8 text-yellow-400">
+              About SS Overseas
+            </h2>
+
+            <p className="text-xl text-gray-300 leading-relaxed mb-6">
+              SS Overseas is dedicated to helping students achieve their dream
+              of studying internationally. We provide expert guidance for
+              admissions, SOP writing, visa processing, interview preparation,
+              and complete overseas education support.
+            </p>
+
+            <p className="text-lg text-gray-400 leading-relaxed">
+              Our mission is to guide students toward the best universities and
+              global career opportunities with trusted counselling and complete
+              support.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-6">
+            {[
+              'Expert Counselling',
+              'Visa Guidance',
+              'Top Universities',
+              'Career Support',
+            ].map((item) => (
+              <div
+                key={item}
+                className="bg-blue-950 border border-yellow-500 rounded-3xl p-8 text-center shadow-xl"
+              >
+                <h3 className="text-2xl font-semibold text-yellow-400">
+                  {item}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services */}
+      <section id="services" className="py-24 px-6 bg-blue-950">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-5xl font-bold text-yellow-400 mb-14">
+            Our Services
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              'Study Abroad Counselling',
+              'University Applications',
+              'Student Visa Assistance',
+              'SOP Assistance',
+              'Interview Preparation',
+              'End-to-End Support',
+            ].map((service) => (
+              <div
+                key={service}
+                className="bg-black border border-yellow-500 rounded-3xl p-10 hover:scale-105 transition shadow-2xl"
+              >
+                <h3 className="text-2xl font-semibold text-yellow-400 mb-4">
+                  {service}
+                </h3>
+
+                <p className="text-gray-300">
+                  Professional guidance and complete support for your overseas
+                  education journey.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Countries */}
+      <section id="countries" className="py-24 px-6 bg-black">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-5xl font-bold text-yellow-400 mb-14">
+            Study Destinations
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {['USA', 'UK', 'Australia', 'Europe'].map((country) => (
+              <div
+                key={country}
+                className="bg-blue-950 border border-yellow-500 rounded-3xl p-12 shadow-xl hover:scale-105 transition"
+              >
+                <h3 className="text-3xl font-bold text-yellow-400">
+                  {country}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 px-6 bg-blue-950">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl font-bold text-yellow-400 mb-14">
+            Student Success Stories
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="bg-black border border-yellow-500 rounded-3xl p-8 shadow-xl"
+              >
+                <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                  “SS Overseas guided me throughout my admission and visa
+                  process. Their support made my dream come true.”
+                </p>
+
+                <h4 className="text-yellow-400 text-xl font-semibold">
+                  Student {item}
+                </h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="py-24 px-6 bg-black">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-5xl font-bold text-yellow-400 mb-10">
+            Contact Us
+          </h2>
+
+          <div className="bg-blue-950 border border-yellow-500 rounded-3xl p-12 shadow-2xl">
+            <p className="text-2xl mb-4">📞 +91 90523 98859</p>
+            <p className="text-2xl mb-4">📧 swetha.asstmanager2022@gmail.com</p>
+            <p className="text-2xl mb-8">📍 Hyderabad, India</p>
+
+            <a
+              href="https://wa.me/919052398859"
+              className="inline-block bg-yellow-500 hover:bg-yellow-400 text-black font-bold px-10 py-4 rounded-2xl transition"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Floating WhatsApp */}
+      <a
+        href="https://wa.me/919052398859"
+        className="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-4 rounded-full shadow-2xl text-lg font-bold hover:scale-110 transition"
+      >
+        WhatsApp
+      </a>
+
+      {/* Footer */}
+      <footer className="bg-black border-t border-yellow-500 text-center py-8 text-gray-400">
+        <p>© 2026 SS Overseas. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
+}
+
